@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block navbar %}
+        <a href="{{ url_for('auth.login') }}" class="nav-item">Login</a>
+        <a href="{{ url_for('auth.signup') }}" class="nav-item">Sign Up</a>
+{% endblock %}
+{% block content %}
+<div class="login-signup-container">
+    <h3 class="login-signup-heading">Login</h3>
+    <div class="login-signup-box">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="notification">
+                {{ messages[0] }}
+            </div>
+        {% endif %}
+        {% endwith %}
+        <form action="/login" method="POST">
+            <input class="form-item" type="email" name="email" placeholder="Enter email" required="true" value="{{ request.form.email }}">
+            <input class="form-item" type="password" name="password" placeholder="Enter password" required="true" value="{{ request.form.password }}">
+            <label class="checkbox"><input type="checkbox" name="remember" value="{{ request.form.remember }}"> Remember me</label>
+            <button class="btn" type="submit">Login</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

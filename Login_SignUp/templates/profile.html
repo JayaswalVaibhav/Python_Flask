@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block navbar %}
+<!--        <a href="" class="nav-item">Home</a>-->
+        <a href="" class="nav-item">Profile</a>
+        <a href="{{ url_for('auth.logout') }}" class="nav-item">Logout</a>
+{% endblock %}
+{% block content %}
+<div class="profile">
+    <div class="greet">
+        <h1>Hello {{ name }}!</h1>
+    </div>
+</div>
+{% endblock %}

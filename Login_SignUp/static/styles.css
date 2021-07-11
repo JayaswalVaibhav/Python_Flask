@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero-header{
+    background-color: #a8aedc;
+    margin-top: -8px;
+}
+
+.navbar{
+    margin: 8px;
+    padding: 9px;
+    direction: rtl;
+}
+
+.nav-item{
+    text-decoration: None;
+    margin: 8px 10px;
+}
+
+
+.login-signup-container{
+    background-color: aliceblue;
+    border: 2px solid black;
+    position: relative;
+    width: 19%;
+    margin: 100px auto;
+    padding: 18px 20px;
+    border-radius: 7px;
+}
+
+.login-signup-heading{
+    text-align: center;
+    padding: 16px;
+    font-size: 26px;
+}
+
+.form-item{
+    display: block;
+    text-align: center;
+    margin: 22px auto;
+    width: -webkit-fill-available;
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+
+.checkbox{
+    display: block;
+    margin: 13px 0px;
+}
+
+.btn{
+    width: 20%;
+    position: relative;
+    left: 42%;
+}
+
+.notification{
+    background-color: crimson;
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 7px;
+}
